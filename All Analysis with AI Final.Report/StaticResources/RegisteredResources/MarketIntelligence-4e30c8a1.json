@@ -1,0 +1,71 @@
+{
+  "name": "MarketIntelligence-4e30c8a1.json",
+  "dataColors": [
+    "#38BDF8",
+    "#22C55E",
+    "#F59E0B",
+    "#EF4444",
+    "#A78BFA",
+    "#14B8A6",
+    "#F472B6",
+    "#60A5FA"
+  ],
+  "good": "#22C55E",
+  "neutral": "#F59E0B",
+  "bad": "#EF4444",
+  "maximum": "#22C55E",
+  "center": "#F59E0B",
+  "minimum": "#EF4444",
+  "null": "#64748B",
+  "foreground": "#E5E7EB",
+  "foregroundNeutralSecondary": "#94A3B8",
+  "foregroundNeutralTertiary": "#64748B",
+  "background": "#111C2E",
+  "backgroundLight": "#172337",
+  "backgroundNeutral": "#263449",
+  "tableAccent": "#38BDF8",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F8FAFC",
+      "fontSize": 14
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F8FAFC",
+      "fontSize": 28
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "color": "#CBD5E1",
+      "fontSize": 10
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "color": "#F8FAFC",
+      "fontSize": 11
+    }
+  },
+  "visualStyles": {
+    "tableEx": {
+      "*": {
+        "columnHeaders": [
+          {
+            "autoSizeColumnWidth": true,
+            "columnAdjustment": "growToFit",
+            "backColor": "#172337",
+            "fontColor": "#F8FAFC"
+          }
+        ],
+        "values": [
+          {
+            "backColorPrimary": "#111C2E",
+            "backColorSecondary": "#0D1728",
+            "fontColorPrimary": "#E5E7EB",
+            "fontColorSecondary": "#E5E7EB"
+          }
+        ]
+      }
+    }
+  }
+}

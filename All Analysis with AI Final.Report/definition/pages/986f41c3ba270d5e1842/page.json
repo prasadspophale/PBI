@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
-  "name": "4c8e2e6c9e00bd25a630",
-  "displayName": "AI Stock Overview",
+  "name": "986f41c3ba270d5e1842",
+  "displayName": "AI Opportunity Scanner",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,

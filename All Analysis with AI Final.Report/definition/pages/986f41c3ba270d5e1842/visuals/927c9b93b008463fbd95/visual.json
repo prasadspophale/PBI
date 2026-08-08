@@ -1,0 +1,386 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "927c9b93b008463fbd95",
+  "position": {
+    "x": 560,
+    "y": 216,
+    "z": 1000,
+    "height": 480,
+    "width": 696,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "rank"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.rank",
+              "nativeQueryRef": "rank",
+              "displayName": "Rank"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "stock"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.stock",
+              "nativeQueryRef": "stock",
+              "displayName": "Stock"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "confidence"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.confidence",
+              "nativeQueryRef": "confidence",
+              "displayName": "Confidence"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "rsi"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.rsi",
+              "nativeQueryRef": "rsi",
+              "displayName": "RSI"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "current_price"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.current_price",
+              "nativeQueryRef": "current_price",
+              "displayName": "Current Price"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "entry"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.entry",
+              "nativeQueryRef": "entry",
+              "displayName": "Entry"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "stop_loss"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.stop_loss",
+              "nativeQueryRef": "stop_loss",
+              "displayName": "Stop Loss"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "target_1"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.target_1",
+              "nativeQueryRef": "target_1",
+              "displayName": "Target 1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "target_2"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.target_2",
+              "nativeQueryRef": "target_2",
+              "displayName": "Target 2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "trend"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.trend",
+              "nativeQueryRef": "trend",
+              "displayName": "Trend"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
+                  "Property": "long_term_signal"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.long_term_signal",
+              "nativeQueryRef": "long_term_signal",
+              "displayName": "Long Term"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'growToFit'"
+                }
+              }
+            },
+            "autoSizeColumnWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Opportunity Ranking'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F3F4F6'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#111C2E'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#263449'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
