@@ -1,0 +1,245 @@
+table 'All Analysis with AI Final'
+	lineageTag: 120d8f58-c573-4745-88ad-5d610f69b93c
+
+	column date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 17589745-6f30-4e10-b7de-afb29d6b6606
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: fb1c5299-447e-46ed-99b1-117fb766ceaa
+			defaultHierarchy: LocalDateTable_38edc2f5-1115-4ef9-819a-26ab38413dca.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column stock
+		dataType: string
+		lineageTag: df2cf958-f8f2-4cc5-8fdb-f7759c21174e
+		summarizeBy: none
+		sourceColumn: stock
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_price
+		dataType: double
+		lineageTag: 56da2073-a692-4b2b-89bf-af9af35ad668
+		summarizeBy: sum
+		sourceColumn: current_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column change_pct
+		dataType: double
+		lineageTag: 951d667a-de66-437a-aa17-e30306749152
+		summarizeBy: sum
+		sourceColumn: change_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rsi
+		dataType: double
+		lineageTag: ecae4217-461a-48ba-92cb-b468f8186223
+		summarizeBy: sum
+		sourceColumn: rsi
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ema20
+		dataType: double
+		lineageTag: ebd997dd-05fa-4aa8-99bb-913befae5a28
+		summarizeBy: sum
+		sourceColumn: ema20
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ema50
+		dataType: double
+		lineageTag: e4f94868-7296-412a-9f01-46b067dd2411
+		summarizeBy: sum
+		sourceColumn: ema50
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ema200
+		dataType: double
+		lineageTag: 5d913d90-c63d-4c1d-86f4-4ab04cca0247
+		summarizeBy: sum
+		sourceColumn: ema200
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vwap
+		dataType: double
+		lineageTag: 527ebbc2-e9b1-4525-80c6-772ce1857c2d
+		summarizeBy: sum
+		sourceColumn: vwap
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column macd
+		dataType: double
+		lineageTag: 7d76ce0f-2760-464a-9ddc-89ca7697724e
+		summarizeBy: sum
+		sourceColumn: macd
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column volume
+		dataType: int64
+		formatString: 0
+		lineageTag: d96ec947-f591-430d-b50d-e99e9037774b
+		summarizeBy: sum
+		sourceColumn: volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_volume
+		dataType: int64
+		formatString: 0
+		lineageTag: cf335f12-cb66-4cdd-a29b-3f82b9cf6135
+		summarizeBy: sum
+		sourceColumn: avg_volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column confidence
+		dataType: int64
+		formatString: 0
+		lineageTag: 2883fb9c-bdfe-476b-9e2e-f1de52d528ed
+		summarizeBy: sum
+		sourceColumn: confidence
+
+		annotation SummarizationSetBy = Automatic
+
+	column entry
+		dataType: double
+		lineageTag: 1df3d806-ddd6-4927-a7d9-6533bc75e67a
+		summarizeBy: sum
+		sourceColumn: entry
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column target_1
+		dataType: double
+		lineageTag: 7d1c14f7-c739-45eb-bb5d-67d480339254
+		summarizeBy: sum
+		sourceColumn: target_1
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column target_2
+		dataType: double
+		lineageTag: ce6988a9-6e3b-41b5-af1e-718ae3f9d415
+		summarizeBy: sum
+		sourceColumn: target_2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column stop_loss
+		dataType: double
+		lineageTag: b918e9d6-d16f-4d43-9301-851b93a2aac1
+		summarizeBy: sum
+		sourceColumn: stop_loss
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column trend
+		dataType: string
+		lineageTag: 2d7861f3-a31f-45a9-8a38-9a7b42d12ca4
+		summarizeBy: none
+		sourceColumn: trend
+
+		annotation SummarizationSetBy = Automatic
+
+	column intraday_signal
+		dataType: string
+		lineageTag: 30f9ad97-953f-47d9-b1ba-0798572b71b3
+		summarizeBy: none
+		sourceColumn: intraday_signal
+
+		annotation SummarizationSetBy = Automatic
+
+	column long_term_signal
+		dataType: string
+		lineageTag: 7672f8b5-5674-43d6-a620-262b911768a7
+		summarizeBy: none
+		sourceColumn: long_term_signal
+
+		annotation SummarizationSetBy = Automatic
+
+	column timeframe
+		dataType: string
+		lineageTag: 16df3737-dda7-4644-9e57-21c9d3d74c34
+		summarizeBy: none
+		sourceColumn: timeframe
+
+		annotation SummarizationSetBy = Automatic
+
+	column timeframe_t2
+		dataType: string
+		lineageTag: cde7f57d-fd54-4bc3-bbb0-e68bf6566aed
+		summarizeBy: none
+		sourceColumn: timeframe_t2
+
+		annotation SummarizationSetBy = Automatic
+
+	column risk_reward
+		dataType: double
+		lineageTag: 8cceb75a-e10e-459c-bd9c-29e5128edf6a
+		summarizeBy: sum
+		sourceColumn: risk_reward
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column rank
+		dataType: int64
+		formatString: 0
+		lineageTag: 894af94d-5c83-4c13-a102-ba4a04c13c2a
+		summarizeBy: sum
+		sourceColumn: rank
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'All Analysis with AI Final' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Prasad\OneDrive\Documents\Intraday Macro\Power BI\All Analysis with AI Final.csv"),[Delimiter=",", Columns=24, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"date", type datetime}, {"stock", type text}, {"current_price", type number}, {"change_pct", type number}, {"rsi", type number}, {"ema20", type number}, {"ema50", type number}, {"ema200", type number}, {"vwap", type number}, {"macd", type number}, {"volume", Int64.Type}, {"avg_volume", Int64.Type}, {"confidence", Int64.Type}, {"entry", type number}, {"target_1", type number}, {"target_2", type number}, {"stop_loss", type number}, {"trend", type text}, {"intraday_signal", type text}, {"long_term_signal", type text}, {"timeframe", type text}, {"timeframe_t2", type text}, {"risk_reward", type number}, {"rank", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
