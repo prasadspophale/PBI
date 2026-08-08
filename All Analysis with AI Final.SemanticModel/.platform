@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "All Analysis with AI Final"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b0bc61da-b0d1-44fe-af05-b35a89197d83"
+  }
+}

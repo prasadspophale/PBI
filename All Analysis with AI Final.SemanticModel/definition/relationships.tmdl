@@ -1,0 +1,5 @@
+relationship fb1c5299-447e-46ed-99b1-117fb766ceaa
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'All Analysis with AI Final'.date
+	toColumn: LocalDateTable_38edc2f5-1115-4ef9-819a-26ab38413dca.Date
+
