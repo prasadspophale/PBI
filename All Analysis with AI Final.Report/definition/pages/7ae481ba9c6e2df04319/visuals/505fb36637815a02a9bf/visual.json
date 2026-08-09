@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "505fb36637815a02a9bf",
   "position": {
-    "x": 24,
-    "y": 96,
-    "z": 1000,
-    "height": 112,
-    "width": 1232,
-    "tabOrder": 1000
+    "x": 24.285714285714288,
+    "y": 95.714285714285722,
+    "z": 2000,
+    "height": 154.28571428571431,
+    "width": 1231.4285714285716,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "All Analysis with AI Final.Selected Price",
-              "nativeQueryRef": "Selected Price"
+              "nativeQueryRef": "Selected Price",
+              "format": "G"
             },
             {
               "field": {
@@ -126,7 +127,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -150,7 +151,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -181,7 +182,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }

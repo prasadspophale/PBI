@@ -3,7 +3,7 @@
   "name": "986f41c3ba270d5e1842",
   "displayName": "AI Opportunity Scanner",
   "displayOption": "FitToPage",
-  "height": 720,
+  "height": 1250,
   "width": 1280,
   "objects": {
     "background": [
@@ -14,7 +14,7 @@
               "color": {
                 "expr": {
                   "Literal": {
-                    "Value": "'#08111F'"
+                    "Value": "'#F4F7FB'"
                   }
                 }
               }
@@ -38,7 +38,7 @@
               "color": {
                 "expr": {
                   "Literal": {
-                    "Value": "'#050A12'"
+                    "Value": "'#E8EDF4'"
                   }
                 }
               }

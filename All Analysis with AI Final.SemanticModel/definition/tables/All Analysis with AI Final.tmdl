@@ -1,6 +1,74 @@
 table 'All Analysis with AI Final'
 	lineageTag: 120d8f58-c573-4745-88ad-5d610f69b93c
 
+	measure 'Stocks Scanned' = DISTINCTCOUNT('All Analysis with AI Final'[stock])
+		formatString: 0
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf001
+
+	measure 'Buy Signals' = CALCULATE(DISTINCTCOUNT('All Analysis with AI Final'[stock]), 'All Analysis with AI Final'[long_term_signal] = "BUY")
+		formatString: 0
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf002
+
+	measure 'Sell Signals' = CALCULATE(DISTINCTCOUNT('All Analysis with AI Final'[stock]), 'All Analysis with AI Final'[long_term_signal] = "SELL")
+		formatString: 0
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf003
+
+	measure 'Hold Signals' = CALCULATE(DISTINCTCOUNT('All Analysis with AI Final'[stock]), 'All Analysis with AI Final'[long_term_signal] = "HOLD")
+		formatString: 0
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf004
+
+	measure 'Average Confidence' = DIVIDE(AVERAGE('All Analysis with AI Final'[confidence]), 100)
+		formatString: 0.0%
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf005
+
+	measure 'Average Confidence Score' = AVERAGE('All Analysis with AI Final'[confidence])
+		formatString: 0
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf006
+
+	measure 'Average Risk Reward' = AVERAGE('All Analysis with AI Final'[risk_reward])
+		formatString: 0.00
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf007
+
+	measure 'Selected Price' = MAX('All Analysis with AI Final'[current_price])
+		formatString: ₹#,0.00
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf008
+
+	measure 'Selected Change %' = DIVIDE(MAX('All Analysis with AI Final'[change_pct]), 100)
+		formatString: 0.00%;-0.00%
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf009
+
+	measure 'Selected RSI' = MAX('All Analysis with AI Final'[rsi])
+		formatString: 0.00
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf010
+
+	measure 'Selected MACD' = MAX('All Analysis with AI Final'[macd])
+		formatString: 0.000
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf011
+
+	measure 'Selected EMA20' = MAX('All Analysis with AI Final'[ema20])
+		formatString: ₹#,0.00
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf012
+
+	measure 'Selected EMA50' = MAX('All Analysis with AI Final'[ema50])
+		formatString: ₹#,0.00
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf013
+
+	measure 'Selected EMA200' = MAX('All Analysis with AI Final'[ema200])
+		formatString: ₹#,0.00
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf014
+
+	measure 'Selected VWAP' = MAX('All Analysis with AI Final'[vwap])
+		formatString: ₹#,0.00
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf015
+
+	measure 'Selected Volume' = MAX('All Analysis with AI Final'[volume])
+		formatString: #,0
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf016
+
+	measure 'Selected Avg Volume' = MAX('All Analysis with AI Final'[avg_volume])
+		formatString: #,0
+		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf017
+
 	column date
 		dataType: dateTime
 		formatString: General Date
@@ -229,73 +297,12 @@ table 'All Analysis with AI Final'
 
 		annotation SummarizationSetBy = Automatic
 
-	measure 'Stocks Scanned' = DISTINCTCOUNT('All Analysis with AI Final'[stock])
-		formatString: 0
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf001
+	column RequiredStocks = ISBLANK(RELATED(Stocklist[Stocks]))
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6c05045f-baf1-4aaa-ae43-1efb675f5e00
+		summarizeBy: none
 
-	measure 'Buy Signals' = CALCULATE(DISTINCTCOUNT('All Analysis with AI Final'[stock]), 'All Analysis with AI Final'[long_term_signal] = "BUY")
-		formatString: 0
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf002
-
-	measure 'Sell Signals' = CALCULATE(DISTINCTCOUNT('All Analysis with AI Final'[stock]), 'All Analysis with AI Final'[long_term_signal] = "SELL")
-		formatString: 0
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf003
-
-	measure 'Hold Signals' = CALCULATE(DISTINCTCOUNT('All Analysis with AI Final'[stock]), 'All Analysis with AI Final'[long_term_signal] = "HOLD")
-		formatString: 0
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf004
-
-	measure 'Average Confidence' = DIVIDE(AVERAGE('All Analysis with AI Final'[confidence]), 100)
-		formatString: 0.0%
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf005
-
-	measure 'Average Confidence Score' = AVERAGE('All Analysis with AI Final'[confidence])
-		formatString: 0
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf006
-
-	measure 'Average Risk Reward' = AVERAGE('All Analysis with AI Final'[risk_reward])
-		formatString: 0.00
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf007
-
-	measure 'Selected Price' = MAX('All Analysis with AI Final'[current_price])
-		formatString: ₹#,0.00
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf008
-
-	measure 'Selected Change %' = DIVIDE(MAX('All Analysis with AI Final'[change_pct]), 100)
-		formatString: 0.00%;-0.00%
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf009
-
-	measure 'Selected RSI' = MAX('All Analysis with AI Final'[rsi])
-		formatString: 0.00
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf010
-
-	measure 'Selected MACD' = MAX('All Analysis with AI Final'[macd])
-		formatString: 0.000
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf011
-
-	measure 'Selected EMA20' = MAX('All Analysis with AI Final'[ema20])
-		formatString: ₹#,0.00
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf012
-
-	measure 'Selected EMA50' = MAX('All Analysis with AI Final'[ema50])
-		formatString: ₹#,0.00
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf013
-
-	measure 'Selected EMA200' = MAX('All Analysis with AI Final'[ema200])
-		formatString: ₹#,0.00
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf014
-
-	measure 'Selected VWAP' = MAX('All Analysis with AI Final'[vwap])
-		formatString: ₹#,0.00
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf015
-
-	measure 'Selected Volume' = MAX('All Analysis with AI Final'[volume])
-		formatString: #,0
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf016
-
-	measure 'Selected Avg Volume' = MAX('All Analysis with AI Final'[avg_volume])
-		formatString: #,0
-		lineageTag: 8f2f5fd4-8d57-4b53-9a60-42d6484cf017
+		annotation SummarizationSetBy = Automatic
 
 	partition 'All Analysis with AI Final' = m
 		mode: import
@@ -310,3 +317,4 @@ table 'All Analysis with AI Final'
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Table
+

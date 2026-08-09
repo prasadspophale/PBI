@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "6833ee348c585777f7aa",
   "position": {
-    "x": 824,
-    "y": 216,
-    "z": 1000,
-    "height": 480,
-    "width": 432,
-    "tabOrder": 1000
+    "x": 825,
+    "y": 266.66666666666669,
+    "z": 6000,
+    "height": 428.33333333333337,
+    "width": 430,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "tableEx",
@@ -137,6 +137,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "All Analysis with AI Final"
+                  }
+                },
+                "Property": "rank"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {
@@ -198,7 +215,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -222,7 +239,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -253,7 +270,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -337,5 +354,121 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f0e023c043d2a8366631",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "stock"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7cc76c1bdc08605703a2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "rank"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "dbf373c7a1700d29aa8a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "confidence"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6f7b7abf2ad30674cd7a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "current_price"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "809138037ccd02b01cd2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "change_pct"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "65d1fa183c8edad02153",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "trend"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "da5aaf73e58e991b2792",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "intraday_signal"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "77621264a764e9ca70d0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "long_term_signal"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

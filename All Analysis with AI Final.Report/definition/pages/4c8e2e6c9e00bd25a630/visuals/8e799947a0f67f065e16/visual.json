@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "8e799947a0f67f065e16",
   "position": {
-    "x": 24,
-    "y": 96,
-    "z": 1000,
-    "height": 104,
-    "width": 1232,
-    "tabOrder": 1000
+    "x": 25,
+    "y": 103.33333333333334,
+    "z": 8000,
+    "height": 148.57142857142858,
+    "width": 1231.4285714285716,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -112,7 +112,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -136,7 +136,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -167,7 +167,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -209,14 +209,7 @@
             "top": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "bottom": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
+                  "Value": "0D"
                 }
               }
             },
@@ -233,10 +226,77 @@
                   "Value": "8D"
                 }
               }
+            },
+            "bottom": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
             }
           }
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "762986154110317c0650",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Stocks Scanned"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6c99285bb58a06700055",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Buy Signals"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2d438aec25c0c10020a0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Average Confidence"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "cb1d6b3aa300c4757603",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Average Risk Reward"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

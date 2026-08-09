@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "002d5cb8e99a68994af1",
   "position": {
-    "x": 416,
-    "y": 216,
-    "z": 1000,
-    "height": 232,
-    "width": 392,
-    "tabOrder": 1000
+    "x": 415,
+    "y": 266.66666666666669,
+    "z": 0,
+    "height": 191.66666666666669,
+    "width": 393.33333333333337,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.trend",
               "nativeQueryRef": "trend",
+              "active": true,
               "displayName": "Trend"
             }
           ]
@@ -89,7 +90,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -113,7 +114,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -144,7 +145,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -215,5 +216,37 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "9341b379a100434259a1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "trend"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c7db66b897a2100d62ee",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Stocks Scanned"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

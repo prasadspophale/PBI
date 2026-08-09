@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "ee699c3c18870318529d",
   "position": {
     "x": 696,
     "y": 16,
-    "z": 1000,
+    "z": 6000,
     "height": 80,
     "width": 176,
-    "tabOrder": 1000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.long_term_signal",
               "nativeQueryRef": "long_term_signal",
+              "active": true,
               "displayName": "Long-term signal"
             }
           ]
@@ -85,7 +86,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -116,7 +117,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }

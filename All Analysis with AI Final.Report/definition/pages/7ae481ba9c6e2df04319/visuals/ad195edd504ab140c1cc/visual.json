@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "ad195edd504ab140c1cc",
   "position": {
-    "x": 24,
-    "y": 224,
-    "z": 1000,
-    "height": 224,
+    "x": 24.285714285714288,
+    "y": 260,
+    "z": 5000,
+    "height": 198.56571428571431,
     "width": 600,
-    "tabOrder": 1000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.stock",
               "nativeQueryRef": "stock",
+              "active": true,
               "displayName": "Stock"
             }
           ]
@@ -145,7 +146,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -169,7 +170,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -200,7 +201,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
