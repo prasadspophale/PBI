@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "45d14efb1dd9a7a9138d",
   "position": {
     "x": 880,
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.intraday_signal",
               "nativeQueryRef": "intraday_signal",
+              "active": true,
               "displayName": "Intraday signal"
             }
           ]
@@ -85,7 +86,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -116,7 +117,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -187,5 +188,23 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "cf73080d87d16d1501b2",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "intraday_signal"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

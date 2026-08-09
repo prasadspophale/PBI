@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "d10326a51cbc96dfddd2",
   "position": {
     "x": 24,
-    "y": 216,
-    "z": 1000,
-    "height": 480,
+    "y": 300,
+    "z": 5000,
+    "height": 950,
     "width": 520,
-    "tabOrder": 1000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.stock",
               "nativeQueryRef": "stock",
+              "active": true,
               "displayName": "Stock"
             }
           ]
@@ -50,6 +51,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "All Analysis with AI Final"
+                  }
+                },
+                "Property": "Average Confidence Score"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "visualContainerObjects": {
@@ -89,7 +107,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -113,7 +131,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -144,7 +162,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -215,5 +233,37 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "71540e08bc2b58cb508e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "stock"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "dcf1486a2e0702846681",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Average Confidence Score"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

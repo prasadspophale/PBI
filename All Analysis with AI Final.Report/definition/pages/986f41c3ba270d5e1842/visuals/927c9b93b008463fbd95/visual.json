@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "927c9b93b008463fbd95",
   "position": {
     "x": 560,
-    "y": 216,
-    "z": 1000,
-    "height": 480,
+    "y": 300,
+    "z": 2000,
+    "height": 936,
     "width": 696,
-    "tabOrder": 1000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -182,6 +182,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "All Analysis with AI Final"
+                  }
+                },
+                "Property": "confidence"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {
@@ -243,7 +260,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -267,7 +284,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -298,7 +315,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -382,5 +399,163 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6f3318494d04309e0b5a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "rank"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "854453f37868322e82c3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "stock"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "154fa704675b511d6e2b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "confidence"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "63f54940161676d4bba8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "rsi"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "92aa327372312245d96c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "current_price"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "974556d9ca7a784208a4",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "entry"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c04d0e0b00d1b32621ed",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "stop_loss"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "048cf5e12a38ee945d60",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "target_1"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "342638a6a40a9e5bc318",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "target_2"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "20a6859917ddab1cc101",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "trend"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "99e132d9470c2b3c2ae0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "long_term_signal"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

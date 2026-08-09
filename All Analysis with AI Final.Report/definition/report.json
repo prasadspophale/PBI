@@ -11,7 +11,7 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "MarketIntelligence-4e30c8a1.json",
+      "name": "MarketIntelligence-7f91b2c4.json",
       "reportVersionAtImport": {
         "visual": "2.11.0",
         "report": "3.4.0",
@@ -19,6 +19,25 @@
       },
       "type": "RegisteredResources"
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d79f59a0b6e72062c138",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "RequiredStocks"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      }
+    ]
   },
   "objects": {
     "section": [
@@ -28,6 +47,19 @@
             "expr": {
               "Literal": {
                 "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
               }
             }
           }
@@ -52,8 +84,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "MarketIntelligence-4e30c8a1.json",
-          "path": "MarketIntelligence-4e30c8a1.json",
+          "name": "MarketIntelligence-7f91b2c4.json",
+          "path": "MarketIntelligence-7f91b2c4.json",
           "type": "CustomTheme"
         }
       ]

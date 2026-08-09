@@ -9,13 +9,14 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["All Analysis with AI Final"]
+annotation PBI_QueryOrder = ["All Analysis with AI Final","Stocklist"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table 'All Analysis with AI Final'
 ref table DateTableTemplate_81e08142-d569-4a16-8f13-91daf2c3516f
 ref table LocalDateTable_38edc2f5-1115-4ef9-819a-26ab38413dca
+ref table Stocklist
 
 ref cultureInfo en-IN
 

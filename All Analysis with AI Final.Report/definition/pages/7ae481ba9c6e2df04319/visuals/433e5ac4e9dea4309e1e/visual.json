@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "433e5ac4e9dea4309e1e",
   "position": {
     "x": 640,
-    "y": 224,
+    "y": 257.14285714285717,
     "z": 1000,
-    "height": 224,
-    "width": 616,
+    "height": 198.56571428571431,
+    "width": 615.70571428571441,
     "tabOrder": 1000
   },
   "visual": {
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.stock",
               "nativeQueryRef": "stock",
+              "active": true,
               "displayName": "Stock"
             }
           ]
@@ -103,7 +104,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -127,7 +128,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -158,7 +159,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }

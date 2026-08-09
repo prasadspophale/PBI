@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "2c3ea6cb55e06bf2fb3e",
   "position": {
     "x": 880,
     "y": 16,
-    "z": 1000,
+    "z": 3000,
     "height": 80,
     "width": 176,
-    "tabOrder": 1000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.trend",
               "nativeQueryRef": "trend",
+              "active": true,
               "displayName": "Trend"
             }
           ]
@@ -67,6 +68,11 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
       ]
     },
     "visualContainerObjects": {
@@ -85,7 +91,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -116,7 +122,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -187,5 +193,23 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "173a7176db2064843789",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "trend"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

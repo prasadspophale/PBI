@@ -1,0 +1,23 @@
+table Stocklist
+	lineageTag: af0198c9-df65-4613-942e-78120a9b2879
+
+	column Stocks
+		dataType: string
+		lineageTag: 9ebb65b3-d071-4e43-8739-89941019a86c
+		summarizeBy: none
+		sourceColumn: Stocks
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Stocklist = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("RVBBDoMwDPsL5x2mSXtASFOa0SWo7QYb4v/fGErQUA61LSt2uq6dlr7RMnXbZe2E2ky9wQb7ECYjEGMmQylErM98u1+dQrb3UWcSKsPHGComlprYt47wEaruY40sHoAu9SH/AykvlY0VygyCHtroAXXv5n46/ZPOVIwx7tODjN43gPCkpXnEm2uSl/sKBfBb24RDIZJDj/iX/bRXQDX01cDg4kg5N5X9Y9ycDjOLLucyqzUUDt22/QA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "Stocks"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

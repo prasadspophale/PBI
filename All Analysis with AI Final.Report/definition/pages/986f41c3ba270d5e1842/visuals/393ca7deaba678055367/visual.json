@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "393ca7deaba678055367",
   "position": {
     "x": 1064,
     "y": 16,
-    "z": 1000,
+    "z": 0,
     "height": 80,
     "width": 192,
-    "tabOrder": 1000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "slicer",
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.trend",
               "nativeQueryRef": "trend",
+              "active": true,
               "displayName": "Trend"
             }
           ]
@@ -85,7 +86,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -116,7 +117,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }

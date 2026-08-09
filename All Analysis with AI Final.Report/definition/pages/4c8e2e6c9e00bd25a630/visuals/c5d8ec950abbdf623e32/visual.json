@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "c5d8ec950abbdf623e32",
   "position": {
-    "x": 24,
-    "y": 464,
-    "z": 1000,
-    "height": 232,
-    "width": 784,
-    "tabOrder": 1000
+    "x": 23.333333333333336,
+    "y": 481.66666666666669,
+    "z": 9000,
+    "height": 215,
+    "width": 785,
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "tableEx",
@@ -183,7 +183,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -207,7 +207,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -238,7 +238,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -322,5 +322,107 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "62d812585e0c30430a80",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "stock"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "ac95b0d35080c4e9533b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "entry"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a86b6ec9312436b2d673",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "stop_loss"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f23135c304a38412c74a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "target_1"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f96ffe7594b52ab75ba9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "timeframe"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6e4e2bc6e084081a791b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "target_2"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "14a664200044e5e71611",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "timeframe_t2"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

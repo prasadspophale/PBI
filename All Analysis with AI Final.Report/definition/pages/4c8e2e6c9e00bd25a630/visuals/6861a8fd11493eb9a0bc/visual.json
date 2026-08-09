@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "6861a8fd11493eb9a0bc",
   "position": {
-    "x": 24,
-    "y": 216,
-    "z": 1000,
-    "height": 232,
-    "width": 376,
-    "tabOrder": 1000
+    "x": 25,
+    "y": 266.66666666666669,
+    "z": 7000,
+    "height": 191.66666666666669,
+    "width": 375,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "donutChart",
@@ -28,6 +28,7 @@
               },
               "queryRef": "All Analysis with AI Final.long_term_signal",
               "nativeQueryRef": "long_term_signal",
+              "active": true,
               "displayName": "Long-term signal"
             }
           ]
@@ -89,7 +90,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F3F4F6'"
+                      "Value": "'#1F2937'"
                     }
                   }
                 }
@@ -113,7 +114,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#111C2E'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -144,7 +145,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#263449'"
+                      "Value": "'#D7DEE8'"
                     }
                   }
                 }
@@ -215,5 +216,37 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "27ea5ba0b500ebb58307",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "long_term_signal"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "69d1f73f7c6b4ed35928",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Stocks Scanned"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

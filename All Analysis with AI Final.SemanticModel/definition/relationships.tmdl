@@ -3,3 +3,9 @@ relationship fb1c5299-447e-46ed-99b1-117fb766ceaa
 	fromColumn: 'All Analysis with AI Final'.date
 	toColumn: LocalDateTable_38edc2f5-1115-4ef9-819a-26ab38413dca.Date
 
+relationship d096692e-d6c9-eeb0-3b81-3e6e91d009a2
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Stocklist.Stocks
+	toColumn: 'All Analysis with AI Final'.stock
+
