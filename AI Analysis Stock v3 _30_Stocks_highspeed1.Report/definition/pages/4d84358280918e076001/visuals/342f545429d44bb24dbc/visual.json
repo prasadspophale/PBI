@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "342f545429d44bb24dbc",
+  "position": {
+    "x": 28,
+    "y": 86,
+    "z": 0,
+    "height": 1000,
+    "width": 1804,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Rank Score" } }, "queryRef": "YahooTable.Rank Score", "nativeQueryRef": "Rank" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Stock" } }, "queryRef": "YahooTable.Stock", "nativeQueryRef": "Stock" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Signal Status" } }, "queryRef": "YahooTable.Signal Status", "nativeQueryRef": "Trade Signal" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Trend Status" } }, "queryRef": "YahooTable.Trend Status", "nativeQueryRef": "Trend" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Current Price" } }, "queryRef": "YahooTable.Current Price", "nativeQueryRef": "LTP" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Change %" } }, "queryRef": "YahooTable.Change %", "nativeQueryRef": "Change %" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Confidence" } }, "queryRef": "YahooTable.Confidence", "nativeQueryRef": "Score / 100" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Entry" } }, "queryRef": "YahooTable.Entry", "nativeQueryRef": "Entry" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Stop Loss" } }, "queryRef": "YahooTable.Stop Loss", "nativeQueryRef": "Stop Loss" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Target 1" } }, "queryRef": "YahooTable.Target 1", "nativeQueryRef": "Target 1" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Risk Reward" } }, "queryRef": "YahooTable.Risk Reward", "nativeQueryRef": "Risk : Reward" },
+            { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Timeframe" } }, "queryRef": "YahooTable.Timeframe", "nativeQueryRef": "Target ETA" }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          { "field": { "Column": { "Expression": { "SourceRef": { "Entity": "YahooTable" } }, "Property": "Rank Score" } }, "direction": "Ascending" }
+        ]
+      }
+    },
+    "objects": {
+      "values": [
+        { "properties": { "fontSize": { "expr": { "Literal": { "Value": "13D" } } }, "fontColor": { "solid": { "color": { "expr": { "Literal": { "Value": "'#1B2430'" } } } } } } }
+      ],
+      "columnHeaders": [
+        { "properties": { "fontSize": { "expr": { "Literal": { "Value": "14D" } } }, "fontColor": { "solid": { "color": { "expr": { "Literal": { "Value": "'#FFFFFF'" } } } } }, "backColor": { "solid": { "color": { "expr": { "Literal": { "Value": "'#14213D'" } } } } } } }
+      ],
+      "grid": [
+        { "properties": { "outlineColor": { "solid": { "color": { "expr": { "Literal": { "Value": "'#D9E2F0'" } } } } }, "gridVertical": { "expr": { "Literal": { "Value": "false" } } } } }
+      ],
+      "columnFormatting": [
+        { "properties": { "alignment": { "expr": { "Literal": { "Value": "'Center'" } } } }, "selector": { "metadata": "YahooTable.Rank Score" } },
+        { "properties": { "alignment": { "expr": { "Literal": { "Value": "'Left'" } } } }, "selector": { "metadata": "YahooTable.Stock" } },
+        { "properties": { "alignment": { "expr": { "Literal": { "Value": "'Center'" } } } }, "selector": { "metadata": "YahooTable.Signal Status" } },
+        { "properties": { "alignment": { "expr": { "Literal": { "Value": "'Center'" } } } }, "selector": { "metadata": "YahooTable.Trend Status" } },
+        { "properties": { "alignment": { "expr": { "Literal": { "Value": "'Right'" } } } }, "selector": { "metadata": "YahooTable.Current Price" } },
+        { "properties": { "alignment": { "expr": { "Literal": { "Value": "'Center'" } } } }, "selector": { "metadata": "YahooTable.Confidence" } }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
