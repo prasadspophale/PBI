@@ -1,0 +1,433 @@
+table YahooTable
+	lineageTag: 6355ae3e-a281-40f8-845e-4787a76c6a82
+
+	column Date
+		dataType: string
+		lineageTag: 3d02d174-610a-4cdc-bc02-7f27e63f0dc2
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stock
+		dataType: string
+		lineageTag: 4150a992-b2a7-45ff-ab0e-edad7f54c31f
+		summarizeBy: none
+		sourceColumn: Stock
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Price'
+		dataType: double
+		lineageTag: 702fed29-90a0-435c-ad52-11f9dbd6d055
+		summarizeBy: none
+		sourceColumn: Current Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column Trend
+		dataType: string
+		lineageTag: 2bc1263d-bda9-4942-99fb-f56ebec89b79
+		summarizeBy: none
+		sourceColumn: Trend
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Intraday Signal'
+		dataType: string
+		lineageTag: addba6c3-3d95-480b-b34c-9f7168171f36
+		summarizeBy: none
+		sourceColumn: Intraday Signal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Long-Term Signal'
+		dataType: string
+		lineageTag: 60ce509d-70e2-43fd-85d2-810db3b9b951
+		summarizeBy: none
+		sourceColumn: Long-Term Signal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Confidence
+		dataType: int64
+		lineageTag: fb84c500-6c62-4ea7-8a5c-8e6307e113db
+		summarizeBy: none
+		sourceColumn: Confidence
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rank Score'
+		dataType: int64
+		lineageTag: 83f9a3c2-8a93-4804-92a7-e45878f68a01
+		summarizeBy: none
+		sourceColumn: Rank Score
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Signal Status'
+		dataType: string
+		lineageTag: 1b1f7f11-1770-4ad0-9096-2a8dd8d2c35a
+		summarizeBy: none
+		sourceColumn: Signal Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Trend Status'
+		dataType: string
+		lineageTag: 531199ae-c531-420e-b85a-4f72192a6402
+		summarizeBy: none
+		sourceColumn: Trend Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Entry
+		dataType: double
+		lineageTag: ee3bfcf4-3ed2-4118-b270-2efc5922190b
+		summarizeBy: none
+		sourceColumn: Entry
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Stop Loss'
+		dataType: double
+		lineageTag: ebbd0a38-64c5-460e-ac94-203f60154642
+		summarizeBy: none
+		sourceColumn: Stop Loss
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Target 1'
+		dataType: double
+		lineageTag: c122da9f-64cb-4649-b72f-70d6f3dd440a
+		summarizeBy: none
+		sourceColumn: Target 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Timeframe
+		dataType: string
+		lineageTag: fe5d1785-1460-4e8a-b34e-bd31601414ff
+		summarizeBy: none
+		sourceColumn: Timeframe
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Target 2'
+		dataType: double
+		lineageTag: 3a218e4b-5933-4e4c-ac61-b0d737df80c4
+		summarizeBy: none
+		sourceColumn: Target 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Timeframe T2'
+		dataType: string
+		lineageTag: c7880317-4690-4ad1-9b01-781ef23c70a9
+		summarizeBy: none
+		sourceColumn: Timeframe T2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Change %'
+		dataType: double
+		lineageTag: 9ec47f74-3fe7-46f8-a5d0-5f3c08cc59b9
+		summarizeBy: none
+		sourceColumn: Change %
+
+		annotation SummarizationSetBy = Automatic
+
+	column RSI
+		dataType: double
+		lineageTag: 400e70b4-824d-4f62-b18c-b81b9356805d
+		summarizeBy: none
+		sourceColumn: RSI
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMA20
+		dataType: double
+		lineageTag: c65faec7-a9fc-4776-aaca-50503fd1ace6
+		summarizeBy: none
+		sourceColumn: EMA20
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMA50
+		dataType: double
+		lineageTag: 6b47db88-b676-4e6d-a33d-f81d6e0c3d9c
+		summarizeBy: none
+		sourceColumn: EMA50
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMA200
+		dataType: double
+		lineageTag: 781e5d7c-a792-49f4-99e0-2b091454104c
+		summarizeBy: none
+		sourceColumn: EMA200
+
+		annotation SummarizationSetBy = Automatic
+
+	column VWAP
+		dataType: double
+		lineageTag: 957d4162-983d-41e8-a4d1-e5570ec46ffe
+		summarizeBy: none
+		sourceColumn: VWAP
+
+		annotation SummarizationSetBy = Automatic
+
+	column MACD
+		dataType: double
+		lineageTag: 8f2b5459-f918-4a13-a3f0-cc475b87ec6f
+		summarizeBy: none
+		sourceColumn: MACD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Volume
+		dataType: int64
+		lineageTag: 00ffb6f9-d232-404a-8146-4ceeccae074d
+		summarizeBy: none
+		sourceColumn: Volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Avg Volume'
+		dataType: int64
+		lineageTag: 409f6aeb-4f3d-458d-b907-cefff84456cb
+		summarizeBy: none
+		sourceColumn: Avg Volume
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Risk Reward'
+		dataType: double
+		lineageTag: 7de935b7-cd89-47f9-9511-a8e8936ec6ce
+		summarizeBy: none
+		sourceColumn: Risk Reward
+
+		annotation SummarizationSetBy = Automatic
+
+	partition YahooTable = m
+		mode: import
+		source =
+				// Study Analysis — Power Query (M) port of StudyAnalysis1.bas
+				// In Excel: Data > Get Data > From Other Sources > Blank Query > Advanced Editor.
+				// Paste this entire query, refresh, then load the returned table to Dashboard.
+				let
+				    Watchlist = {
+				        "IREDA", "BDL", "TATAELXSI", "KAYNES", "NTPCGREEN", "NETWEB",
+				        "IRFC", "NTPC", "BEL", "JIOFIN", "HUDCO", "RELIANCE", "TATAPOWER",
+				        "TCS", "TEJASNET", "JSWENERGY", "NHPC", "TATATECH", "ADANIPORTS",
+				        "COCHINSHIP", "HAL", "AFFLE", "INOXGREEN", "KELLTONTEC", "POWERGRID",
+				        "ZODIAC", "ORBTEXP", "HDFCSML250", "VISHNU", "ICICIBANK"
+				    },
+				
+				    OutputColumns = {
+				        "Date", "Stock", "Current Price", "Trend", "Intraday Signal",
+			        "Long-Term Signal", "Confidence", "Signal Status", "Trend Status", "Entry", "Stop Loss", "Target 1",
+				        "Timeframe", "Target 2", "Timeframe T2", "Change %", "RSI", "EMA20",
+				        "EMA50", "EMA200", "VWAP", "MACD", "Volume", "Avg Volume", "Risk Reward"
+				    },
+				
+				    RoundOrNull = (value as nullable number, digits as number) as nullable number =>
+				        if value = null then null else Number.Round(value, digits),
+				
+				    Clamp = (value as number, low as number, high as number) as number =>
+				        if value < low then low else if value > high then high else value,
+				
+				    EMA = (values as list, period as number) as list =>
+				        if List.IsEmpty(values) then {}
+				        else
+				            let
+				                k = 2 / (period + 1),
+				                series = List.Accumulate(
+				                    List.Skip(values),
+				                    {List.First(values)},
+				                    (state, current) => state & {current * k + List.Last(state) * (1 - k)}
+				                )
+				            in
+				                series,
+				
+				    RSI14 = (closes as list) as nullable number =>
+				        let
+				            n = List.Count(closes),
+				            p = 14
+				        in
+				            if n <= p then null
+				            else
+				                let
+				                    InitialChanges = List.Transform({1..p}, each closes{_} - closes{_ - 1}),
+				                    InitialGain = List.Sum(List.Transform(InitialChanges, each if _ >= 0 then _ else 0)) / p,
+				                    InitialLoss = List.Sum(List.Transform(InitialChanges, each if _ < 0 then -_ else 0)) / p,
+				                    Smoothed = if n <= p + 1 then [Gain = InitialGain, Loss = InitialLoss] else
+				                        List.Accumulate(
+				                            {p + 1..n - 1},
+				                            [Gain = InitialGain, Loss = InitialLoss],
+				                            (state, i) =>
+				                                let d = closes{i} - closes{i - 1}
+				                                in [
+				                                    Gain = (state[Gain] * (p - 1) + (if d > 0 then d else 0)) / p,
+				                                    Loss = (state[Loss] * (p - 1) + (if d < 0 then -d else 0)) / p
+				                                ]
+				                        ),
+				                    Result = if Smoothed[Loss] = 0 then 100 else 100 - 100 / (1 + Smoothed[Gain] / Smoothed[Loss])
+				                in
+				                    Result,
+				
+				    ATR14 = (highs as list, lows as list, closes as list) as nullable number =>
+				        let
+				            n = List.Count(closes)
+				        in
+				            if n < 2 then null
+				            else
+				                let
+				                    TRs = List.Transform({1..n - 1}, (i) =>
+				                        List.Max({highs{i} - lows{i}, Number.Abs(highs{i} - closes{i - 1}), Number.Abs(lows{i} - closes{i - 1})})
+				                    ),
+				                    p = if List.Count(TRs) < 14 then List.Count(TRs) else 14,
+				                    Initial = List.Average(List.FirstN(TRs, p)),
+				                    Smoothed = List.Accumulate(
+				                        List.Skip(TRs, p),
+				                        Initial,
+				                        (state, tr) => (state * (p - 1) + tr) / p
+				                    )
+				                in
+				                    Smoothed,
+				
+				    FormatTimeframe = (distance as number, dailyPace as number) as text =>
+				        if distance <= 0 or dailyPace <= 0 then "N/A"
+				        else
+				            let
+				                days = distance / dailyPace,
+				                minutes = days * 375,
+				                Whole = (x as number) as text => Number.ToText(Number.Round(x, 0), "0", "en-US")
+				            in
+				                if minutes <= 15 then "15 min"
+				                else if minutes < 60 then Whole(minutes / 5) & " min"
+				                else if days < 1 then
+				                    let h = if Number.Round(minutes / 60, 0) < 1 then 1 else Number.Round(minutes / 60, 0)
+				                    in Whole(h) & (if h = 1 then " hr" else " hrs")
+				                else if days < 5 then
+				                    let d = if Number.Round(days, 0) < 1 then 1 else Number.Round(days, 0)
+				                    in Whole(d) & (if d = 1 then " day" else " days")
+				                else if days < 22 then
+				                    let w = if Number.Round(days / 5, 0) < 1 then 1 else Number.Round(days / 5, 0)
+				                    in Whole(w) & (if w = 1 then " week" else " weeks")
+				                else if days < 252 then
+				                    let m = if Number.Round(days / 21, 0) < 1 then 1 else Number.Round(days / 21, 0)
+				                    in Whole(m) & (if m = 1 then " month" else " months")
+				                else
+				                    let y = if Number.Round(days / 252, 0) < 1 then 1 else Number.Round(days / 252, 0)
+				                    in Whole(y) & (if y = 1 then " year" else " years"),
+				
+				    ErrorRow = (symbol as text) as record => [
+				        Date = Date.ToText(Date.From(DateTime.LocalNow()), "yyyy-MM-dd", "en-US"), Stock = symbol,
+				        #"Current Price" = null, Trend = "Neutral", #"Intraday Signal" = "HOLD",
+			        #"Long-Term Signal" = "HOLD", Confidence = 0, #"Rank Score" = null, #"Signal Status" = "🟡 HOLD ●", #"Trend Status" = "● NEUTRAL", Entry = null, #"Stop Loss" = null,
+				        #"Target 1" = null, Timeframe = "N/A", #"Target 2" = null, #"Timeframe T2" = "N/A",
+				        #"Change %" = null, RSI = null, EMA20 = null, EMA50 = null, EMA200 = null,
+				        VWAP = null, MACD = null, Volume = null, #"Avg Volume" = null, #"Risk Reward" = null
+				    ],
+				
+				    GetCandles = (symbol as text) as record =>
+				        let
+				            Response = Json.Document(Web.Contents(
+				                "https://query1.finance.yahoo.com",
+				                [RelativePath = "v8/finance/chart/" & symbol & ".NS", Query = [interval = "1d", range = "1y"], Timeout = #duration(0, 0, 0, 30)]
+				            )),
+				            Result = Response[chart][result]{0},
+				            Quote = Result[indicators][quote]{0},
+				            Raw = Table.FromColumns({Quote[close], Quote[high], Quote[low], Quote[volume]}, {"Close", "High", "Low", "Volume"}),
+				            Valid = Table.SelectRows(Raw, each [Close] <> null)
+				        in
+				            [Candles = Valid, Meta = Result[meta]],
+				
+				    AnalyseSymbol = (symbol as text) as record =>
+				        try
+				            let
+				                Yahoo = GetCandles(symbol),
+				                Candles = Yahoo[Candles],
+				                Rows = Table.ToRecords(Candles),
+				                n = List.Count(Rows),
+				                closes = List.Transform(Rows, each Number.From([Close])),
+				                highs = List.Transform(Rows, each if [High] = null then Number.From([Close]) else Number.From([High])),
+				                lows = List.Transform(Rows, each if [Low] = null then Number.From([Close]) else Number.From([Low])),
+				                volumes = List.Transform(Rows, each if [Volume] = null then 0 else Number.From([Volume])),
+				                Meta = Yahoo[Meta],
+				                MetaPrice = Record.FieldOrDefault(Meta, "regularMarketPrice", null),
+				                price = if MetaPrice = null then List.Last(closes) else Number.From(MetaPrice),
+				                prevClose = closes{n - 2},
+				                changePct = if prevClose = 0 then 0 else (price - prevClose) / prevClose * 100,
+				                rsi = RSI14(closes),
+				                ema9 = List.Last(EMA(closes, 9)),
+				                ema20 = List.Last(EMA(closes, 20)),
+				                ema50 = List.Last(EMA(closes, 50)),
+				                ema200 = List.Last(EMA(closes, 200)),
+				                emaFast = EMA(closes, 12),
+				                emaSlow = EMA(closes, 26),
+				                macdSeries = List.Transform(List.Positions(closes), each emaFast{_} - emaSlow{_}),
+				                signalSeries = EMA(macdSeries, 9),
+				                macdHist = List.Last(macdSeries) - List.Last(signalSeries),
+				                macdBullish = macdHist > 0,
+				                typicalPrices = List.Transform(List.Positions(closes), each (highs{_} + lows{_} + closes{_}) / 3),
+				                cumPV = List.Sum(List.Transform(List.Positions(closes), each typicalPrices{_} * volumes{_})),
+				                cumV = List.Sum(volumes),
+				                vwap = if cumV = 0 then price else cumPV / cumV,
+				                atr = ATR14(highs, lows, closes),
+				                riskAtr = if atr = null then price * 0.02 else atr,
+				                lowerBand = (List.Last(highs) + List.Last(lows)) / 2 - 3 * riskAtr,
+				                superTrendDir = if price >= lowerBand and price > vwap then "up" else if price < lowerBand then "down" else if price > ema20 then "up" else "down",
+				                volPeriod = if n < 20 then n else 20,
+				                avgVolume = List.Average(List.LastN(volumes, volPeriod)),
+				                curVolume = List.Last(volumes),
+				                trend = if ema9 > ema20 and price > ema20 then "Bullish" else if ema9 < ema20 and price < ema20 then "Bearish" else "Neutral",
+				                score1 = if rsi <> null and rsi >= 55 and rsi <= 70 then 15 else if rsi <> null and rsi > 40 and rsi < 55 then 8 else if rsi <> null and rsi > 70 then 5 else 0,
+				                score2 = score1 + (if price > ema20 and ema20 > ema50 then 20 else if price > ema20 then 10 else 0),
+				                score3 = score2 + (if macdBullish then 20 else 0) + (if price > vwap then 15 else 0),
+				                score4 = score3 + (if curVolume > 1.5 * avgVolume then 15 else if curVolume > avgVolume then 8 else 0) + (if superTrendDir = "up" then 15 else 0),
+				                confidence = Clamp(Number.Round(score4, 0), 0, 100),
+				                buyRule = rsi <> null and rsi >= 55 and rsi <= 70 and price > ema20 and price > vwap and macdBullish and curVolume > 1.5 * avgVolume,
+				                sellRule = rsi <> null and rsi < 40 and not macdBullish and price < vwap and ema20 < ema50,
+				                intradaySignal = if buyRule or confidence >= 65 then "BUY" else if sellRule or confidence <= 30 then "SELL" else "HOLD",
+				                longTermSignal = if price > ema200 and ema50 > ema200 then "BUY" else if price < ema200 and ema50 < ema200 then "SELL" else "HOLD",
+				                isBuy = intradaySignal = "BUY",
+				                entry = price,
+				                stopLoss = if isBuy then price - 1.5 * riskAtr else price + 1.5 * riskAtr,
+				                target1 = if isBuy then price + 2 * riskAtr else price - 2 * riskAtr,
+				                target2 = if isBuy then price + 3 * riskAtr else price - 3 * riskAtr,
+				                riskReward = if Number.Abs(entry - stopLoss) = 0 then null else Number.Round(Number.Abs(target1 - entry) / Number.Abs(entry - stopLoss), 2),
+				                movePeriod = if n - 1 < 20 then n - 1 else 20,
+				                moves = List.Transform({n - movePeriod..n - 1}, each Number.Abs(closes{_} - closes{_ - 1})),
+				                avgDailyMove = List.Average(moves),
+				                dailyPace = List.Max({if avgDailyMove <= 0 then riskAtr else avgDailyMove, riskAtr * 0.5, price * 0.001}),
+				                actionable = intradaySignal <> "HOLD" or longTermSignal <> "HOLD",
+				                tf1 = if actionable then FormatTimeframe(Number.Abs(target1 - entry), dailyPace) else "N/A",
+				                tf2 = if actionable then FormatTimeframe(Number.Abs(target2 - entry), dailyPace) else "N/A"
+				            in [
+				                Date = Date.ToText(Date.From(DateTime.LocalNow()), "yyyy-MM-dd", "en-US"), Stock = symbol,
+				                #"Current Price" = RoundOrNull(price, 2), Trend = trend, #"Intraday Signal" = intradaySignal,
+			                #"Long-Term Signal" = longTermSignal, Confidence = confidence, #"Rank Score" = null,
+			                #"Signal Status" = if intradaySignal = "BUY" then "🟢 BUY ▲" else if intradaySignal = "SELL" then "🔴 SELL ▼" else "🟡 HOLD ●",
+			                #"Trend Status" = if trend = "Bullish" then "▲ UPTREND" else if trend = "Bearish" then "▼ DOWNTREND" else "● NEUTRAL", Entry = RoundOrNull(entry, 2),
+				                #"Stop Loss" = RoundOrNull(stopLoss, 2), #"Target 1" = RoundOrNull(target1, 2), Timeframe = tf1,
+				                #"Target 2" = RoundOrNull(target2, 2), #"Timeframe T2" = tf2, #"Change %" = RoundOrNull(changePct, 2),
+				                RSI = RoundOrNull(rsi, 2), EMA20 = RoundOrNull(ema20, 2), EMA50 = RoundOrNull(ema50, 2),
+				                EMA200 = RoundOrNull(ema200, 2), VWAP = RoundOrNull(vwap, 2), MACD = RoundOrNull(macdHist, 3),
+				                Volume = curVolume, #"Avg Volume" = Number.Round(avgVolume, 0), #"Risk Reward" = riskReward
+				            ]
+				        otherwise ErrorRow(symbol),
+				
+				    Results = List.Transform(Watchlist, each AnalyseSymbol(_)),
+				    Output = Table.FromRecords(Results, OutputColumns),
+			    #"Sorted Rows" = Table.Sort(Output,{{"Confidence", Order.Descending}, {"Stock", Order.Ascending}}),
+			    #"Added Rank" = Table.AddIndexColumn(#"Sorted Rows", "Rank Score", 1, 1, Int64.Type),
+			    #"Typed Columns" = Table.TransformColumnTypes(#"Added Rank", {{"Current Price", type number}, {"Confidence", Int64.Type}, {"Rank Score", Int64.Type}, {"Entry", type number}, {"Stop Loss", type number}, {"Target 1", type number}, {"Target 2", type number}, {"Change %", type number}, {"RSI", type number}, {"EMA20", type number}, {"EMA50", type number}, {"EMA200", type number}, {"VWAP", type number}, {"MACD", type number}, {"Volume", Int64.Type}, {"Avg Volume", Int64.Type}, {"Risk Reward", type number}})
+			in
+			    #"Typed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
