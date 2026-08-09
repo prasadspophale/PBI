@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "AI Analysis Stock v3 _30_Stocks_highspeed1"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a05f77fa-a8d0-4bcd-a582-ed564cd5589c"
+  }
+}
