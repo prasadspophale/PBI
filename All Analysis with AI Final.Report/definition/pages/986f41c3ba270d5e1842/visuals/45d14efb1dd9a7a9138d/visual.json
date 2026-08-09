@@ -188,23 +188,5 @@
         }
       ]
     }
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cf73080d87d16d1501b2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "intraday_signal"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

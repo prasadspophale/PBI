@@ -1,150 +1,79 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "c5d8ec950abbdf623e32",
+  "name": "1b8f03dc980a78c08806",
   "position": {
     "x": 23.333333333333336,
-    "y": 481.66666666666669,
-    "z": 9000,
-    "height": 215,
-    "width": 785,
-    "tabOrder": 9000
+    "y": 120,
+    "z": 4000,
+    "height": 161.66666666666669,
+    "width": 1330,
+    "tabOrder": 4000
   },
   "visual": {
-    "visualType": "tableEx",
+    "visualType": "cardVisual",
     "query": {
       "queryState": {
-        "Values": {
+        "Data": {
           "projections": [
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "stock"
+                  "Property": "Stocks Scanned"
                 }
               },
-              "queryRef": "All Analysis with AI Final.stock",
-              "nativeQueryRef": "stock",
-              "displayName": "Stock"
+              "queryRef": "All Analysis with AI Final.Stocks Scanned",
+              "nativeQueryRef": "Stocks Scanned"
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "entry"
+                  "Property": "Buy Signals"
                 }
               },
-              "queryRef": "All Analysis with AI Final.entry",
-              "nativeQueryRef": "entry",
-              "displayName": "Entry"
+              "queryRef": "All Analysis with AI Final.Buy Signals",
+              "nativeQueryRef": "Buy Signals"
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "stop_loss"
+                  "Property": "Sell Signals"
                 }
               },
-              "queryRef": "All Analysis with AI Final.stop_loss",
-              "nativeQueryRef": "stop_loss",
-              "displayName": "Stop Loss"
+              "queryRef": "All Analysis with AI Final.Sell Signals",
+              "nativeQueryRef": "Sell Signals"
             },
             {
               "field": {
-                "Column": {
+                "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "target_1"
+                  "Property": "Average Confidence"
                 }
               },
-              "queryRef": "All Analysis with AI Final.target_1",
-              "nativeQueryRef": "target_1",
-              "displayName": "Target 1"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "All Analysis with AI Final"
-                    }
-                  },
-                  "Property": "timeframe"
-                }
-              },
-              "queryRef": "All Analysis with AI Final.timeframe",
-              "nativeQueryRef": "timeframe",
-              "displayName": "T1 Timeframe"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "All Analysis with AI Final"
-                    }
-                  },
-                  "Property": "target_2"
-                }
-              },
-              "queryRef": "All Analysis with AI Final.target_2",
-              "nativeQueryRef": "target_2",
-              "displayName": "Target 2"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "All Analysis with AI Final"
-                    }
-                  },
-                  "Property": "timeframe_t2"
-                }
-              },
-              "queryRef": "All Analysis with AI Final.timeframe_t2",
-              "nativeQueryRef": "timeframe_t2",
-              "displayName": "T2 Timeframe"
+              "queryRef": "All Analysis with AI Final.Average Confidence",
+              "nativeQueryRef": "Average Confidence"
             }
           ]
         }
       }
-    },
-    "objects": {
-      "columnHeaders": [
-        {
-          "properties": {
-            "columnAdjustment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'growToFit'"
-                }
-              }
-            },
-            "autoSizeColumnWidth": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "visualContainerObjects": {
       "title": [
@@ -160,7 +89,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Trade Plan'"
+                  "Value": "'Market Snapshot'"
                 }
               }
             },
@@ -307,20 +236,67 @@
             }
           }
         }
-      ],
-      "stylePreset": [
-        {
-          "properties": {
-            "name": {
-              "expr": {
-                "Literal": {
-                  "Value": "'None'"
-                }
-              }
-            }
-          }
-        }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "12e6cd581d0d823037e7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Stocks Scanned"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "402f25cd00c76090705d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Buy Signals"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "439263340e5e36ede774",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Sell Signals"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d683fe83080ce41e40bd",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Average Confidence"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

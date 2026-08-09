@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "927c9b93b008463fbd95",
+  "name": "4f4992509e7ca4027a0a",
   "position": {
-    "x": 560,
+    "x": 25,
     "y": 300,
     "z": 2000,
     "height": 935,
-    "width": 792.5,
+    "width": 1327.5,
     "tabOrder": 2000
   },
   "visual": {
@@ -239,19 +239,6 @@
                   }
                 },
                 "Property": "Combined Score"
-              }
-            },
-            "direction": "Descending"
-          },
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "All Analysis with AI Final"
-                  }
-                },
-                "Property": "rank"
               }
             },
             "direction": "Ascending"
@@ -572,7 +559,7 @@
             "Property": "rank"
           }
         },
-        "type": "Advanced",
+        "type": "Categorical",
         "howCreated": "User"
       },
       {
@@ -604,6 +591,243 @@
         },
         "type": "Categorical",
         "howCreated": "User"
+      },
+      {
+        "name": "b8f66d0c518107680440",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Combined Score"
+          }
+        },
+        "type": "Categorical",
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
+        }
+      },
+      {
+        "name": "9232cbd18a01dcac707c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Combined Signal"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a23fae8f09c8439eb4de",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Rank Indicator"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "5a6b82a5c06a96d0647a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "stock"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "7c37b6990c666440ed94",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "confidence"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "All Analysis with AI Final",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 4,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "a"
+                        }
+                      },
+                      "Property": "confidence"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "10L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "ef957b90416d7bbe4183",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "rsi"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6c2188220237004e028a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "current_price"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "690e84ccb8e6eed65c80",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "entry"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8aa6e5e80743c3704707",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "stop_loss"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "923b518b89d5aa3a375a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "target_1"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a614229ab01cb7b93797",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "target_2"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "f68d03d282d88a6dbb8e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Trend Indicator"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "811458373c65d604333a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Intraday Indicator"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "37068f47411740d4661d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Long Term Indicator"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

@@ -216,37 +216,5 @@
         }
       ]
     }
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9341b379a100434259a1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "trend"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c7db66b897a2100d62ee",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "Stocks Scanned"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

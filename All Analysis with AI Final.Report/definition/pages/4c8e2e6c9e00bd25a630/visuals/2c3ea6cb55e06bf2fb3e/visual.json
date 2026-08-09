@@ -193,23 +193,5 @@
         }
       ]
     }
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "173a7176db2064843789",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "trend"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

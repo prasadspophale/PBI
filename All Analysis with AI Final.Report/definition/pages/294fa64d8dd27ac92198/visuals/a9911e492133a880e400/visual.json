@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "5727c2b9c5c184f096f7",
+  "name": "a9911e492133a880e400",
   "position": {
     "x": 1064,
     "y": 16,
-    "z": 5000,
+    "z": 0,
     "height": 80,
     "width": 192,
-    "tabOrder": 5000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "long_term_signal"
+                  "Property": "trend"
                 }
               },
-              "queryRef": "All Analysis with AI Final.long_term_signal",
-              "nativeQueryRef": "long_term_signal",
+              "queryRef": "All Analysis with AI Final.trend",
+              "nativeQueryRef": "trend",
               "active": true,
-              "displayName": "Long-term signal"
+              "displayName": "Trend"
             }
           ]
         }
@@ -62,16 +62,11 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Long-term signal'"
+                  "Value": "'Trend'"
                 }
               }
             }
           }
-        }
-      ],
-      "general": [
-        {
-          "properties": {}
         }
       ]
     },

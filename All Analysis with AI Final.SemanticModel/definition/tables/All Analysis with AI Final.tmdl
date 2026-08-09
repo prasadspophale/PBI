@@ -304,6 +304,117 @@ table 'All Analysis with AI Final'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Trend Indicator' =
+			VAR TrendValue = UPPER(COALESCE([trend], ""))
+			RETURN
+				SWITCH(
+					TRUE(),
+					TrendValue IN { "BULLISH", "UPTREND", "UP TREND" }, "🟢 ↑ Uptrend",
+					TrendValue = "NEUTRAL", "🟡 ● Neutral",
+					TrendValue IN { "BEARISH", "DOWNTREND", "DOWN TREND" }, "🔴 ● Downtrend",
+					"🟡 ● " & COALESCE([trend], "Watch")
+				)
+		lineageTag: d4bdf9a2-8ae4-40f8-9081-8fb72c8d1001
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Intraday Indicator' =
+			VAR SignalValue = UPPER(COALESCE([intraday_signal], ""))
+			RETURN
+				SWITCH(
+					TRUE(),
+					SignalValue = "BUY", "🟢 ↑ BUY",
+					SignalValue = "SELL", "🔴 ↓ SELL",
+					SignalValue IN { "HOLD", "WATCH" }, "🟡 → " & SignalValue,
+					"🟡 → WATCH"
+				)
+		lineageTag: d4bdf9a2-8ae4-40f8-9081-8fb72c8d1002
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Long Term Indicator' =
+			VAR SignalValue = UPPER(COALESCE([long_term_signal], ""))
+			RETURN
+				SWITCH(
+					TRUE(),
+					SignalValue = "BUY", "🟢 ↑ BUY",
+					SignalValue = "SELL", "🔴 ↓ SELL",
+					SignalValue IN { "HOLD", "WATCH" }, "🟡 → " & SignalValue,
+					"🟡 → WATCH"
+				)
+		lineageTag: d4bdf9a2-8ae4-40f8-9081-8fb72c8d1003
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rank Indicator' =
+			SWITCH(
+				TRUE(),
+				[rank] <= 9, "🟢 " & FORMAT([rank], "00"),
+				[rank] <= 18, "🟡 " & FORMAT([rank], "00"),
+				"🔴 " & FORMAT([rank], "00")
+			)
+		lineageTag: d4bdf9a2-8ae4-40f8-9081-8fb72c8d1004
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Combined Score' =
+			VAR TrendValue = UPPER(COALESCE([trend], ""))
+			VAR IntradayValue = UPPER(COALESCE([intraday_signal], ""))
+			VAR LongTermValue = UPPER(COALESCE([long_term_signal], ""))
+			VAR TrendScore = SWITCH(TRUE(), TrendValue IN { "BULLISH", "UPTREND", "UP TREND" }, 30, TrendValue = "NEUTRAL", 15, 0)
+			VAR IntradayScore = SWITCH(IntradayValue, "BUY", 25, "HOLD", 12, "WATCH", 12, 0)
+			VAR LongTermScore = SWITCH(LongTermValue, "BUY", 25, "HOLD", 12, "WATCH", 12, 0)
+			VAR ConfidenceScore = MIN(20, MAX(0, DIVIDE([confidence], 5, 0)))
+			VAR RankScore = SWITCH(TRUE(), [rank] <= 9, 5, [rank] <= 18, 2, 0)
+			RETURN TrendScore + IntradayScore + LongTermScore + ConfidenceScore + RankScore
+		formatString: 0
+		lineageTag: d4bdf9a2-8ae4-40f8-9081-8fb72c8d1005
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Combined Signal' =
+			VAR TrendValue = UPPER(COALESCE([trend], ""))
+			VAR IntradayValue = UPPER(COALESCE([intraday_signal], ""))
+			VAR LongTermValue = UPPER(COALESCE([long_term_signal], ""))
+			VAR PerfectAlignment =
+				TrendValue IN { "BULLISH", "UPTREND", "UP TREND" }
+					&& IntradayValue = "BUY"
+					&& LongTermValue = "BUY"
+					&& [confidence] >= 80
+					&& [rank] <= 9
+			RETURN
+				SWITCH(
+					TRUE(),
+					PerfectAlignment, "🟢 STRONG BUY",
+					[Combined Score] >= 75, "🟢 BUY",
+					[Combined Score] >= 55, "🟡 WATCH",
+					[Combined Score] >= 40, "🟠 CAUTION",
+					"🔴 SELL"
+				)
+		lineageTag: d4bdf9a2-8ae4-40f8-9081-8fb72c8d1006
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Combined Color' =
+			SWITCH(
+				TRUE(),
+				[Combined Score] >= 75, "#16A34A",
+				[Combined Score] >= 55, "#CA8A04",
+				[Combined Score] >= 40, "#EA580C",
+				"#DC2626"
+			)
+		isHidden
+		lineageTag: d4bdf9a2-8ae4-40f8-9081-8fb72c8d1007
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'All Analysis with AI Final' = m
 		mode: import
 		source =

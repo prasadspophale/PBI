@@ -23,6 +23,21 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
+                  "Property": "Combined Signal"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.Combined Signal",
+              "nativeQueryRef": "Combined Signal",
+              "displayName": "Final Signal"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
                   "Property": "stock"
                 }
               },
@@ -38,12 +53,12 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "rank"
+                  "Property": "Rank Indicator"
                 }
               },
-              "queryRef": "All Analysis with AI Final.rank",
-              "nativeQueryRef": "rank",
-              "displayName": "Rank"
+              "queryRef": "All Analysis with AI Final.Rank Indicator",
+              "nativeQueryRef": "Rank Indicator",
+              "displayName": "Rank Band"
             },
             {
               "field": {
@@ -98,11 +113,11 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "trend"
+                  "Property": "Trend Indicator"
                 }
               },
-              "queryRef": "All Analysis with AI Final.trend",
-              "nativeQueryRef": "trend",
+              "queryRef": "All Analysis with AI Final.Trend Indicator",
+              "nativeQueryRef": "Trend Indicator",
               "displayName": "Trend"
             },
             {
@@ -113,11 +128,11 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "intraday_signal"
+                  "Property": "Intraday Indicator"
                 }
               },
-              "queryRef": "All Analysis with AI Final.intraday_signal",
-              "nativeQueryRef": "intraday_signal",
+              "queryRef": "All Analysis with AI Final.Intraday Indicator",
+              "nativeQueryRef": "Intraday Indicator",
               "displayName": "Intraday"
             },
             {
@@ -128,11 +143,11 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "long_term_signal"
+                  "Property": "Long Term Indicator"
                 }
               },
-              "queryRef": "All Analysis with AI Final.long_term_signal",
-              "nativeQueryRef": "long_term_signal",
+              "queryRef": "All Analysis with AI Final.Long Term Indicator",
+              "nativeQueryRef": "Long Term Indicator",
               "displayName": "Long Term"
             }
           ]
@@ -140,6 +155,19 @@
       },
       "sortDefinition": {
         "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "All Analysis with AI Final"
+                  }
+                },
+                "Property": "Combined Score"
+              }
+            },
+            "direction": "Descending"
+          },
           {
             "field": {
               "Column": {
@@ -354,121 +382,5 @@
         }
       ]
     }
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f0e023c043d2a8366631",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "stock"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "7cc76c1bdc08605703a2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "rank"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "dbf373c7a1700d29aa8a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "confidence"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "6f7b7abf2ad30674cd7a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "current_price"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "809138037ccd02b01cd2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "change_pct"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "65d1fa183c8edad02153",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "trend"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "da5aaf73e58e991b2792",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "intraday_signal"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "77621264a764e9ca70d0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "All Analysis with AI Final"
-              }
-            },
-            "Property": "long_term_signal"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
