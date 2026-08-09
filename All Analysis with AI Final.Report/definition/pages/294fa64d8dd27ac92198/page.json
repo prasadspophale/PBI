@@ -1,29 +1,14 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
-  "themeCollection": {
-    "baseTheme": {
-      "name": "CY26SU07",
-      "reportVersionAtImport": {
-        "visual": "2.11.0",
-        "report": "3.4.0",
-        "page": "2.3.1"
-      },
-      "type": "SharedResources"
-    },
-    "customTheme": {
-      "name": "MarketIntelligence-7f91b2c4.json",
-      "reportVersionAtImport": {
-        "visual": "2.11.0",
-        "report": "3.4.0",
-        "page": "2.3.1"
-      },
-      "type": "RegisteredResources"
-    }
-  },
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "294fa64d8dd27ac92198",
+  "displayName": "Buy",
+  "displayOption": "ActualSize",
+  "height": 1250,
+  "width": 1380,
   "filterConfig": {
     "filters": [
       {
-        "name": "d79f59a0b6e72062c138",
+        "name": "392167d289180ac3a410",
         "field": {
           "Column": {
             "Expression": {
@@ -79,63 +64,53 @@
     ]
   },
   "objects": {
-    "section": [
+    "background": [
       {
         "properties": {
-          "verticalAlignment": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F7FB'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
             "expr": {
               "Literal": {
-                "Value": "'Top'"
+                "Value": "0D"
               }
             }
           }
         }
       }
     ],
-    "outspacePane": [
+    "outspace": [
       {
         "properties": {
-          "expanded": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#E8EDF4'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
             "expr": {
               "Literal": {
-                "Value": "true"
+                "Value": "0D"
               }
             }
           }
         }
       }
     ]
-  },
-  "resourcePackages": [
-    {
-      "name": "SharedResources",
-      "type": "SharedResources",
-      "items": [
-        {
-          "name": "CY26SU07",
-          "path": "BaseThemes/CY26SU07.json",
-          "type": "BaseTheme"
-        }
-      ]
-    },
-    {
-      "name": "RegisteredResources",
-      "type": "RegisteredResources",
-      "items": [
-        {
-          "name": "MarketIntelligence-7f91b2c4.json",
-          "path": "MarketIntelligence-7f91b2c4.json",
-          "type": "CustomTheme"
-        }
-      ]
-    }
-  ],
-  "settings": {
-    "useStylableVisualContainerHeader": true,
-    "exportDataMode": "AllowSummarized",
-    "defaultDrillFilterOtherVisuals": true,
-    "allowChangeFilterTypes": true,
-    "useEnhancedTooltips": true,
-    "useDefaultAggregateDisplayName": true
   }
 }

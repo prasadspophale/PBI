@@ -75,16 +75,6 @@ cultureInfo en-IN
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Long Term": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -95,19 +85,7 @@ cultureInfo en-IN
 			          "ConceptualProperty": "rank"
 			        }
 			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "Rank": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
+			      "State": "Generated"
 			    },
 			    "all_analysis_with_ai_final.confidence": {
 			      "Definition": {
@@ -181,16 +159,6 @@ cultureInfo en-IN
 			      },
 			      "State": "Generated",
 			      "Terms": [
-			        {
-			          "Intraday": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
 			        {
 			          "Intraday signal": {
 			            "State": "Suggested",
@@ -381,6 +349,132 @@ cultureInfo en-IN
 			      "Terms": [
 			        {
 			          "RSI": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "all_analysis_with_ai_final.combined_signal": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "All Analysis with AI Final",
+			          "ConceptualProperty": "Combined Signal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Final Signal": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "all_analysis_with_ai_final.rank_indicator": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "All Analysis with AI Final",
+			          "ConceptualProperty": "Rank Indicator"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Rank Band": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "all_analysis_with_ai_final.trend_indicator": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "All Analysis with AI Final",
+			          "ConceptualProperty": "Trend Indicator"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Trend": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "all_analysis_with_ai_final.intraday_indicator": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "All Analysis with AI Final",
+			          "ConceptualProperty": "Intraday Indicator"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Intraday": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "all_analysis_with_ai_final.long_term_indicator": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "All Analysis with AI Final",
+			          "ConceptualProperty": "Long Term Indicator"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Long Term": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "all_analysis_with_ai_final.combined_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "All Analysis with AI Final",
+			          "ConceptualProperty": "Combined Score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Score": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

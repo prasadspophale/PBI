@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "a996f0f27e9069c3aa41",
+  "name": "99040bc2992069eeb804",
   "position": {
-    "x": 24,
-    "y": 464,
-    "z": 4000,
-    "height": 920,
-    "width": 1232,
-    "tabOrder": 4000
+    "x": 25,
+    "y": 300,
+    "z": 2000,
+    "height": 935,
+    "width": 1327.5,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -38,12 +38,12 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "stock"
+                  "Property": "Combined Score"
                 }
               },
-              "queryRef": "All Analysis with AI Final.stock",
-              "nativeQueryRef": "stock",
-              "displayName": "Stock"
+              "queryRef": "All Analysis with AI Final.Combined Score",
+              "nativeQueryRef": "Combined Score",
+              "displayName": "Score"
             },
             {
               "field": {
@@ -68,6 +68,21 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
+                  "Property": "stock"
+                }
+              },
+              "queryRef": "All Analysis with AI Final.stock",
+              "nativeQueryRef": "stock",
+              "displayName": "Stock"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "All Analysis with AI Final"
+                    }
+                  },
                   "Property": "confidence"
                 }
               },
@@ -83,12 +98,12 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "Trend Indicator"
+                  "Property": "rsi"
                 }
               },
-              "queryRef": "All Analysis with AI Final.Trend Indicator",
-              "nativeQueryRef": "Trend Indicator",
-              "displayName": "Trend"
+              "queryRef": "All Analysis with AI Final.rsi",
+              "nativeQueryRef": "rsi",
+              "displayName": "RSI"
             },
             {
               "field": {
@@ -98,27 +113,12 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "Intraday Indicator"
+                  "Property": "current_price"
                 }
               },
-              "queryRef": "All Analysis with AI Final.Intraday Indicator",
-              "nativeQueryRef": "Intraday Indicator",
-              "displayName": "Intraday"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "All Analysis with AI Final"
-                    }
-                  },
-                  "Property": "Long Term Indicator"
-                }
-              },
-              "queryRef": "All Analysis with AI Final.Long Term Indicator",
-              "nativeQueryRef": "Long Term Indicator",
-              "displayName": "Long Term"
+              "queryRef": "All Analysis with AI Final.current_price",
+              "nativeQueryRef": "current_price",
+              "displayName": "Current Price"
             },
             {
               "field": {
@@ -188,12 +188,12 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "timeframe"
+                  "Property": "Trend Indicator"
                 }
               },
-              "queryRef": "All Analysis with AI Final.timeframe",
-              "nativeQueryRef": "timeframe",
-              "displayName": "T1"
+              "queryRef": "All Analysis with AI Final.Trend Indicator",
+              "nativeQueryRef": "Trend Indicator",
+              "displayName": "Trend"
             },
             {
               "field": {
@@ -203,12 +203,12 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "timeframe_t2"
+                  "Property": "Intraday Indicator"
                 }
               },
-              "queryRef": "All Analysis with AI Final.timeframe_t2",
-              "nativeQueryRef": "timeframe_t2",
-              "displayName": "T2"
+              "queryRef": "All Analysis with AI Final.Intraday Indicator",
+              "nativeQueryRef": "Intraday Indicator",
+              "displayName": "Intraday"
             },
             {
               "field": {
@@ -218,12 +218,12 @@
                       "Entity": "All Analysis with AI Final"
                     }
                   },
-                  "Property": "risk_reward"
+                  "Property": "Long Term Indicator"
                 }
               },
-              "queryRef": "All Analysis with AI Final.risk_reward",
-              "nativeQueryRef": "risk_reward",
-              "displayName": "Risk/Reward"
+              "queryRef": "All Analysis with AI Final.Long Term Indicator",
+              "nativeQueryRef": "Long Term Indicator",
+              "displayName": "Long Term"
             }
           ]
         }
@@ -286,13 +286,97 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "89.0002254103293D"
+                  "Value": "111.57294178262494D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "All Analysis with AI Final.timeframe_t2"
+            "metadata": "All Analysis with AI Final.Combined Signal"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "162.8213019629624D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "All Analysis with AI Final.stock"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "86.04777957180238D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "All Analysis with AI Final.confidence"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "110.83433019490381D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "All Analysis with AI Final.Trend Indicator"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "98.14405417059966D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "All Analysis with AI Final.Intraday Indicator"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "70.42815858177487D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "All Analysis with AI Final.entry"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "71.42857376409972D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "All Analysis with AI Final.target_2"
           }
         }
       ]
@@ -311,7 +395,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Technical Trade Setup'"
+                  "Value": "'Opportunity Ranking'"
                 }
               }
             },
@@ -473,5 +557,149 @@
         }
       ]
     }
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6f3318494d04309e0b5a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "rank"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "20a6859917ddab1cc101",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "trend"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "99e132d9470c2b3c2ae0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "long_term_signal"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "b8f66d0c518107680440",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "All Analysis with AI Final"
+              }
+            },
+            "Property": "Combined Score"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "All Analysis with AI Final",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "a"
+                          }
+                        },
+                        "Property": "Combined Score"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "101.6D"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "102D"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "102.2D"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "103D"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "103.6D"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "105D"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "101D"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }
